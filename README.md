@@ -10,14 +10,14 @@ https://example.com/robots.txt
 User-agent: *
 Disallow: /search/
 Disallow: /*?customize_changeset_uuid=*
-# START YOAST BLOCK
-# ---------------------------
+START YOAST BLOCK
+---------------------------
 User-agent: * 
 Disallow:
 
 Sitemap: https://example.com/sitemap_index.xml
-# ---------------------------
-# END YOAST BLOCK
+---------------------------
+END YOAST BLOCK
 
 **User-agent: **: This line is targeting all web crawlers accessing the site. The asterisk () is a wildcard that applies to all robots, meaning the following rules apply to every web crawler that visits.
 
@@ -25,7 +25,7 @@ Disallow: /search/: This directive tells web crawlers not to crawl any URLs that
 
 Disallow: /?customize_changeset_uuid=: This line instructs robots not to crawl any URLs that include the parameter ?customize_changeset_uuid=. It's likely used to prevent crawling of temporary or session-specific URLs that wouldn't be useful in search engine indexes.
 
-# START YOAST BLOCK and # END YOAST BLOCK: These comments indicate the start and end of a block of directives associated with the Yoast SEO plugin, which is commonly used on WordPress sites to manage SEO settings. Comments in robots.txt files (anything following a # on a line) are ignored by crawlers and are used for human readability.
+START YOAST BLOCK and # END YOAST BLOCK: These comments indicate the start and end of a block of directives associated with the Yoast SEO plugin, which is commonly used on WordPress sites to manage SEO settings. Comments in robots.txt files (anything following a # on a line) are ignored by crawlers and are used for human readability.
 
 Within the Yoast block:
 
