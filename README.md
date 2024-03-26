@@ -12,7 +12,7 @@ Disallow: /search/
 Disallow: /*?customize_changeset_uuid=*
 # START YOAST BLOCK
 # ---------------------------
-User-agent: *
+User-agent: * 
 Disallow:
 
 Sitemap: https://example.com/sitemap_index.xml
